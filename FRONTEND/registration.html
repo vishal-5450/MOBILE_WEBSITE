@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+    <div class="sign-up-form">
+        <img src="MOBI.png">
+
+        <h1>Registration Form</h1>
+
+        <form id="registration_form">
+
+            <input type="text" name="username" id="username" class="input-box" placeholder="USER NAME">
+            <input type="number" name="phonenumber" id="phonenumber" class="input-box" placeholder="PHONE NUMBER" oninput="limitDigits(this, 10)">
+            <input type="email" name="email" id="email" class="input-box" placeholder="EMAIL">
+            <input type="password" id="password1" class="input-box" placeholder="CREATE PASSWORD">
+            <input type="password" name="password" id="password" class="input-box" placeholder="CONFIRM PASSWORD">
+
+            <p>
+                <span>
+                    <input type="checkbox" id="terms_conditions">
+                </span>
+                I Agree to the Terms and Conditions
+            </p>
+
+            <button type="button" class="btn_sign_up" onclick="validateInputs()">Sign UP</button>
+            <hr>
+            <p class="OR">
+                OR
+            <p>
+                <button class="btn_google_login">Login with Google</button>
+
+            <p>
+                Already Registered?
+                <a href="index.html">Sign IN</a>
+            </p>
+
+            <p></p>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../registration.js"></script>
+</body>
+</html>

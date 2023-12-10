@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+	<div class="sign-up-form">
+		<img src="MOBI.png">
+		<h1> Sign In Now</h1>
+		<form id="form1">
+			<input type="text" name="username" id="username" class="input-box" placeholder="USER NAME">
+			<input type="password" name="password" id="password" class="input-box" placeholder="PASSWORD">
+			<p><span><input type="checkbox" id="terms"></span>I agree to the terms and condition</p>
+			<button type="button" id="btn_login" class="signup-btn" onclick="validateInputs()"> Sign in</button>
+			<hr>
+
+			<p>Do not have an account ?<a href="registration.html">Sign up</a></p>
+
+		</form>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script  src="../login.js"></script>
+</body>
+
+</html>
